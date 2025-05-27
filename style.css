@@ -1,0 +1,96 @@
+/* Підключення фрифтів */
+
+/* Google Fonts */
+/* @import url("https://fonts.googleapis.com/css2?family=Carme&display=swap"); */
+/* Google Fonts (Plugin) */
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+/* @import url("reset.css"); */
+
+body {
+	font-family: "Carme", sans-serif;
+	font-size: 17px;
+	color: #2c2c2c;
+	padding: 10px ;
+	background-color: rgb(219, 224, 231);
+}
+a {
+	color: blue;
+	text-decoration: underline;
+}
+h1 {
+	font-size: 30px;
+	font-weight: 700;
+	margin: 0px 30px ;
+}
+h4 {
+	font-size: 15px;
+	font-weight: 700;
+	margin: 10px 15px ;
+}
+h2 {
+	font-size: 25px;
+	font-weight:  700;
+	margin: 10px 15px ;
+}
+li {
+	margin: 10px 30px;
+}
+
+/* 	<p>Завдання від Євгенія N 1(ментора)</p> */
+ /* 1 рівень вкладеності => перший li має бути червоного кольору, всі інші пункти зеленого кольору */
+.Yvhenii-task ul >li {
+	color: red;	 
+} 
+.Yvhenii-task ul >li~li {
+	color: green;	 
+} 
+/* 2 рівень вкладеності => перший li має бути синього кольору, всі інші li 2 рівня вкладеності помаранчевого */
+.Yvhenii-task ul ul >li {
+	color: blue;	 
+} 
+.Yvhenii-task ul ul >li~li {
+	color: orange;	 
+} 
+/* 3 рівень вкладеності => перший li має бути #4597f7кольору, всі інші li 3 рівня вкладеності #5d5d5d */
+
+.Yvhenii-task ol >li {
+	color:  #4597f7;	
+} 
+.Yvhenii-task ol >li~li {
+	color:  #5d5d5d;	
+} 
+/* span в який загорнутий текст на лише 2 рівні вкладеності має бути кольору #a0f0fc */
+.Yvhenii-task ul ul> li>span {
+	color: #a0f0fc;	 
+} 
+/* спосіб № 2 */
+.Yvhenii-task ul>li>ul>li>span {
+	/* color: #a0f0fc;	  */
+} 
+
+p {
+	line-height: 1.37;
+	margin: 5px 10px ;
+}
+.article a{
+	color: orange;
+}
+#facts-nature{
+	color: green;
+}
+[class*="con"]{
+	color: #4597f7;
+}
+[title*="hy"]{
+	color: brown;
+}
+div.facts-modern-ukraine{
+	color: rgb(104, 16, 12);
+}
+.ol-list .item-2{
+	color: green;
+}
